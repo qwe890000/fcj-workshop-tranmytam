@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.160.1">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Chuẩn bị :: Báo cáo thực tập</title>
+
+    
+    <link href="/css/nucleus.css?1783616197" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1783616197" rel="stylesheet">
+    <link href="/css/hybrid.css?1783616197" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1783616197" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1783616197" rel="stylesheet">
+    <link href="/css/auto-complete.css?1783616197" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1783616197" rel="stylesheet">
+    <link href="/css/theme.css?1783616197" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1783616197" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1783616197" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1783616197"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="/vi/5-workshop/5.2-prerequiste/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#fff;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1783616197"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1783616197"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/\/vi";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1783616197"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/1-worklog/1.12-week12/">
+     <b> 1.12. </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/4-eventparticipated/4.3-event3/">
+     <b> 4.3. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6.1-cleanup-script/"
+  title="Cleanup Script"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.6.1-cleanup-script/">
+     <b> 5.6.1. </b> Cleanup Script 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5.1-frontend-code/"
+  title="Frontend Code"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.5.1-frontend-code/">
+     <b> 5.5.1. </b> Frontend Code 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1.1-overview/"
+  title="Giới thiệu LunaGenZ"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.1.1-overview/">
+     <b> 5.1.1. </b> Giới thiệu LunaGenZ 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3.1-lambda-calculation/"
+  title="Lambda Calculation"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.3.1-lambda-calculation/">
+     <b> 5.3.1. </b> Lambda Calculation 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4.1-pdf-flow/"
+  title="Luồng tạo PDF"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.4.1-pdf-flow/">
+     <b> 5.4.1. </b> Luồng tạo PDF 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2.1-vpc/"
+  title="Tạo VPC"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.2.1-vpc/">
+     <b> 5.2.1. </b> Tạo VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Tổng quan"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Tổng quan 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequiste/"
+  title="Chuẩn bị"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="/vi/5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5.2-s3-deployment/"
+  title="Deploy lên S3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.5.2-s3-deployment/">
+     <b> 5.5.2. </b> Deploy lên S3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1.2-architecture/"
+  title="Kiến trúc hệ thống"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.1.2-architecture/">
+     <b> 5.1.2. </b> Kiến trúc hệ thống 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3.2-lambda-pdf/"
+  title="Lambda PDF Function"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.3.2-lambda-pdf/">
+     <b> 5.3.2. </b> Lambda PDF Function 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4.2-pdf-template/"
+  title="PDF Template"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.4.2-pdf-template/">
+     <b> 5.4.2. </b> PDF Template 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2.2-subnets/"
+  title="Tạo Subnets"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.2.2-subnets/">
+     <b> 5.2.2. </b> Tạo Subnets 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6.2-verification/"
+  title="Xác minh Cleanup"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.6.2-verification/">
+     <b> 5.6.2. </b> Xác minh Cleanup 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-backend-lambda/"
+  title="Backend (Lambda)"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.3-backend-lambda/">
+     <b> 5.3. </b> Backend (Lambda) 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5.3-cloudfront/"
+  title="CloudFront CDN"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.5.3-cloudfront/">
+     <b> 5.5.3. </b> CloudFront CDN 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3.3-api-gateway/"
+  title="Tạo API Gateway"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.3.3-api-gateway/">
+     <b> 5.3.3. </b> Tạo API Gateway 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2.3-nat-gateway/"
+  title="Tạo NAT Gateway"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.2.3-nat-gateway/">
+     <b> 5.2.3. </b> Tạo NAT Gateway 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6.3-cost-monitoring/"
+  title="Theo dõi chi phí"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.6.3-cost-monitoring/">
+     <b> 5.6.3. </b> Theo dõi chi phí 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4.3-pdf-optimization/"
+  title="Tối ưu PDF"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.4.3-pdf-optimization/">
+     <b> 5.4.3. </b> Tối ưu PDF 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1.3-prerequisites/"
+  title="Yêu cầu chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.1.3-prerequisites/">
+     <b> 5.1.3. </b> Yêu cầu chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5.4-custom-domain/"
+  title="Custom Domain"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.5.4-custom-domain/">
+     <b> 5.5.4. </b> Custom Domain 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-pdf-generation/"
+  title="Tạo báo cáo PDF"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.4-pdf-generation/">
+     <b> 5.4. </b> Tạo báo cáo PDF 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2.4-vpc-endpoints/"
+  title="Tạo VPC Endpoints"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.2.4-vpc-endpoints/">
+     <b> 5.2.4. </b> Tạo VPC Endpoints 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3.4-testing/"
+  title="Test API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.3.4-testing/">
+     <b> 5.3.4. </b> Test API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-frontend-hosting/"
+  title="Hosting Frontend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.5-frontend-hosting/">
+     <b> 5.5. </b> Hosting Frontend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2.5-dynamodb/"
+  title="Tạo DynamoDB Table"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.2.5-dynamodb/">
+     <b> 5.2.5. </b> Tạo DynamoDB Table 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2.6-s3-buckets/"
+  title="Tạo S3 Buckets"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.2.6-s3-buckets/">
+     <b> 5.2.6. </b> Tạo S3 Buckets 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2.7-iam-roles/"
+  title="Tạo IAM Roles"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/5-workshop/5.2.7-iam-roles/">
+     <b> 5.2.7. </b> Tạo IAM Roles 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/5-workshop/5.2-prerequiste/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/vi/5-workshop/5.2-prerequiste/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer">
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/vi/'>Báo cáo thực tập</a> > <a href='/vi/5-workshop/'>Workshop</a> > Chuẩn bị
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#các-bước-chuẩn-bị">Các bước chuẩn bị</a></li>
+    <li><a href="#tổng-quan-các-bước">Tổng quan các bước</a></li>
+    <li><a href="#bước-1-tạo-vpc">Bước 1: Tạo VPC</a></li>
+    <li><a href="#bước-2-tạo-subnets">Bước 2: Tạo Subnets</a></li>
+    <li><a href="#bước-3-tạo-internet-gateway">Bước 3: Tạo Internet Gateway</a></li>
+    <li><a href="#bước-4-tạo-nat-gateway">Bước 4: Tạo NAT Gateway</a></li>
+    <li><a href="#bước-5-cấu-hình-route-tables">Bước 5: Cấu hình Route Tables</a></li>
+    <li><a href="#bước-6-tạo-vpc-endpoints">Bước 6: Tạo VPC Endpoints</a></li>
+    <li><a href="#bước-7-tạo-dynamodb-table">Bước 7: Tạo DynamoDB Table</a></li>
+    <li><a href="#bước-8-cấu-hình-systems-manager-parameter-store">Bước 8: Cấu hình Systems Manager Parameter Store</a></li>
+    <li><a href="#bước-9-tạo-s3-buckets">Bước 9: Tạo S3 Buckets</a></li>
+    <li><a href="#bước-10-tạo-iam-roles">Bước 10: Tạo IAM Roles</a>
+      <ul>
+        <li><a href="#tạo-execution-role-cho-lambda">Tạo Execution Role cho Lambda</a></li>
+      </ul>
+    </li>
+    <li><a href="#bước-11-thiết-lập-security-group-cho-lambda">Bước 11: Thiết lập Security Group cho Lambda</a></li>
+    <li><a href="#bước-12-cài-đặt-aws-cli-và-các-công-cụ">Bước 12: Cài đặt AWS CLI và các công cụ</a>
+      <ul>
+        <li><a href="#aws-cli-v2">AWS CLI v2</a></li>
+        <li><a href="#git">Git</a></li>
+        <li><a href="#nodejs-khuyến-nghị-v18">Node.js (Khuyến nghị v18+)</a></li>
+      </ul>
+    </li>
+    <li><a href="#bước-13-kiểm-tra-cài-đặt">Bước 13: Kiểm tra cài đặt</a></li>
+    <li><a href="#tóm-tắt-các-resources-đã-tạo">Tóm tắt các Resources đã tạo</a></li>
+    <li><a href="#tiếp-theo">Tiếp theo</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Chuẩn bị
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="các-bước-chuẩn-bị">Các bước chuẩn bị</h2>
+<p>Trước khi bắt đầu, hãy đảm bảo tất cả tài nguyên AWS cơ bản đã được thiết lập.</p>
+<hr>
+<h2 id="tổng-quan-các-bước">Tổng quan các bước</h2>
+<ol>
+<li>Tạo VPC và Subnets</li>
+<li>Thiết lập Internet Gateway</li>
+<li>Tạo NAT Gateway</li>
+<li>Cấu hình Route Tables</li>
+<li>Tạo VPC Endpoints</li>
+<li>Thiết lập DynamoDB Table</li>
+<li>Cấu hình Systems Manager Parameter Store</li>
+<li>Tạo S3 Buckets</li>
+<li>Tạo IAM Roles</li>
+</ol>
+<hr>
+<h2 id="bước-1-tạo-vpc">Bước 1: Tạo VPC</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tạo VPC với CIDR block 10.0.0.0/16</span>
+</span></span><span style="display:flex;"><span>aws ec2 create-vpc <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --cidr-block 10.0.0.0/16 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tag-specifications <span style="color:#e6db74">&#39;ResourceType=vpc,Tags=[{Key=Name,Value=LunaGenZ-VPC}]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Enable DNS hostnames</span>
+</span></span><span style="display:flex;"><span>VPC_ID<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 describe-vpcs <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --filters <span style="color:#e6db74">&#34;Name=tag:Name,Values=LunaGenZ-VPC&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;Vpcs[0].VpcId&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ec2 modify-vpc-attribute <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-id $VPC_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --enable-dns-hostnames <span style="color:#e6db74">&#34;{\&#34;Value\&#34;: true}&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-2-tạo-subnets">Bước 2: Tạo Subnets</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Public Subnet (để chạy NAT Gateway)</span>
+</span></span><span style="display:flex;"><span>aws ec2 create-subnet <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-id $VPC_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --cidr-block 10.0.1.0/24 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --availability-zone us-east-1a <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tag-specifications <span style="color:#e6db74">&#39;ResourceType=subnet,Tags=[{Key=Name,Value=LunaGenZ-PublicSubnet}]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Private Subnet (để chạy Lambda functions)</span>
+</span></span><span style="display:flex;"><span>aws ec2 create-subnet <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-id $VPC_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --cidr-block 10.0.2.0/24 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --availability-zone us-east-1a <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tag-specifications <span style="color:#e6db74">&#39;ResourceType=subnet,Tags=[{Key=Name,Value=LunaGenZ-PrivateSubnet}]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lấy Subnet IDs</span>
+</span></span><span style="display:flex;"><span>PUBLIC_SUBNET<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 describe-subnets <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --filters <span style="color:#e6db74">&#34;Name=tag:Name,Values=LunaGenZ-PublicSubnet&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;Subnets[0].SubnetId&#34;</span> --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>PRIVATE_SUBNET<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 describe-subnets <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --filters <span style="color:#e6db74">&#34;Name=tag:Name,Values=LunaGenZ-PrivateSubnet&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;Subnets[0].SubnetId&#34;</span> --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Public Subnet: </span>$PUBLIC_SUBNET<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Private Subnet: </span>$PRIVATE_SUBNET<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-3-tạo-internet-gateway">Bước 3: Tạo Internet Gateway</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tạo Internet Gateway</span>
+</span></span><span style="display:flex;"><span>aws ec2 create-internet-gateway <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tag-specifications <span style="color:#e6db74">&#39;ResourceType=internet-gateway,Tags=[{Key=Name,Value=LunaGenZ-IGW}]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>IGW_ID<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 describe-internet-gateways <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --filters <span style="color:#e6db74">&#34;Name=tag:Name,Values=LunaGenZ-IGW&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;InternetGateways[0].InternetGatewayId&#34;</span> --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Attach vào VPC</span>
+</span></span><span style="display:flex;"><span>aws ec2 attach-internet-gateway <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --internet-gateway-id $IGW_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-id $VPC_ID
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Internet Gateway: </span>$IGW_ID<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-4-tạo-nat-gateway">Bước 4: Tạo NAT Gateway</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tạo Elastic IP</span>
+</span></span><span style="display:flex;"><span>ALLOCATION_ID<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 allocate-address <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --domain vpc <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;AllocationId&#34;</span> --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tạo NAT Gateway trong Public Subnet</span>
+</span></span><span style="display:flex;"><span>aws ec2 create-nat-gateway <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --subnet-id $PUBLIC_SUBNET <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --allocation-id $ALLOCATION_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tag-specifications <span style="color:#e6db74">&#39;ResourceType=natgateway,Tags=[{Key=Name,Value=LunaGenZ-NATGateway}]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NAT_GW_ID<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 describe-nat-gateways <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --filter <span style="color:#e6db74">&#34;Name=tag:Name,Values=LunaGenZ-NATGateway&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;NatGateways[0].NatGatewayId&#34;</span> --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Đợi NAT Gateway available</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Đợi NAT Gateway available...&#34;</span>
+</span></span><span style="display:flex;"><span>aws ec2 wait nat-gateway-available --nat-gateway-ids $NAT_GW_ID
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;NAT Gateway: </span>$NAT_GW_ID<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-5-cấu-hình-route-tables">Bước 5: Cấu hình Route Tables</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Lấy Route Table ID của VPC</span>
+</span></span><span style="display:flex;"><span>ROUTE_TABLE<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 describe-route-tables <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --filters <span style="color:#e6db74">&#34;Name=vpc-id,Values=</span>$VPC_ID<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;RouteTables[0].RouteTableId&#34;</span> --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tạo Route Table riêng cho Private Subnet</span>
+</span></span><span style="display:flex;"><span>PRIVATE_ROUTE_TABLE<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 create-route-table <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-id $VPC_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;RouteTable.RouteTableId&#34;</span> --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ec2 create-route <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --route-table-id $PRIVATE_ROUTE_TABLE <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --destination-cidr-block 0.0.0.0/0 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --nat-gateway-id $NAT_GW_ID
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Associate Private Subnet với Private Route Table</span>
+</span></span><span style="display:flex;"><span>aws ec2 associate-route-table <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --subnet-id $PRIVATE_SUBNET <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --route-table-id $PRIVATE_ROUTE_TABLE
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tạo Route Table cho Public Subnet</span>
+</span></span><span style="display:flex;"><span>PUBLIC_ROUTE_TABLE<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 describe-route-tables <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --filters <span style="color:#e6db74">&#34;Name=vpc-id,Values=</span>$VPC_ID<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;RouteTables[0].RouteTableId&#34;</span> --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ec2 create-route <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --route-table-id $PUBLIC_ROUTE_TABLE <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --destination-cidr-block 0.0.0.0/0 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --gateway-id $IGW_ID
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Enable Auto-assign public IP cho Public Subnet</span>
+</span></span><span style="display:flex;"><span>aws ec2 modify-subnet-attribute <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --subnet-id $PUBLIC_SUBNET <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --map-public-ip-on-launch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Route Tables đã cấu hình xong&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-6-tạo-vpc-endpoints">Bước 6: Tạo VPC Endpoints</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># VPC Endpoint cho S3 (Gateway)</span>
+</span></span><span style="display:flex;"><span>aws ec2 create-vpc-endpoint <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-id $VPC_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --service-name com.amazonaws.us-east-1.s3 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --route-table-ids $PRIVATE_ROUTE_TABLE <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tag-specifications <span style="color:#e6db74">&#39;ResourceType=vpc-endpoint,Tags=[{Key=Name,Value=LunaGenZ-S3-Endpoint}]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># VPC Endpoint cho DynamoDB (Gateway)</span>
+</span></span><span style="display:flex;"><span>aws ec2 create-vpc-endpoint <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-id $VPC_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --service-name com.amazonaws.us-east-1.dynamodb <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --route-table-ids $PRIVATE_ROUTE_TABLE <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tag-specifications <span style="color:#e6db74">&#39;ResourceType=vpc-endpoint,Tags=[{Key=Name,Value=LunaGenZ-DynamoDB-Endpoint}]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># VPC Endpoint cho Systems Manager (Interface)</span>
+</span></span><span style="display:flex;"><span>aws ec2 create-vpc-endpoint <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-id $VPC_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --service-name com.amazonaws.us-east-1.ssm <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --subnet-ids $PRIVATE_SUBNET <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-endpoint-type Interface <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tag-specifications <span style="color:#e6db74">&#39;ResourceType=vpc-endpoint,Tags=[{Key=Name,Value=LunaGenZ-SSM-Endpoint}]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;VPC Endpoints đã tạo xong&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-7-tạo-dynamodb-table">Bước 7: Tạo DynamoDB Table</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tạo DynamoDB table để lưu session</span>
+</span></span><span style="display:flex;"><span>aws dynamodb create-table <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --table-name LunaGenZ-Sessions <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --attribute-definitions <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>        AttributeName<span style="color:#f92672">=</span>sessionId,AttributeType<span style="color:#f92672">=</span>S <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --key-schema <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>        AttributeName<span style="color:#f92672">=</span>sessionId,KeyType<span style="color:#f92672">=</span>HASH <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --billing-mode PAY_PER_REQUEST <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tags Key<span style="color:#f92672">=</span>Name,Value<span style="color:#f92672">=</span>LunaGenZ-Sessions
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Enable TTL</span>
+</span></span><span style="display:flex;"><span>aws dynamodb update-time-to-live <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --table-name LunaGenZ-Sessions <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --time-to-live-specification <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>        Enabled<span style="color:#f92672">=</span>true,AttributeName<span style="color:#f92672">=</span>expiresAt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;DynamoDB Table đã tạo xong&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-8-cấu-hình-systems-manager-parameter-store">Bước 8: Cấu hình Systems Manager Parameter Store</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tạo API Key (Secure String)</span>
+</span></span><span style="display:flex;"><span>aws ssm put-parameter <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --name /lunagenz/api-key <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --value <span style="color:#e6db74">&#34;lunagenz-secret-key-2024&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --type SecureString <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --key-id alias/aws/ssm <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --tags Key<span style="color:#f92672">=</span>Name,Value<span style="color:#f92672">=</span>LunaGenZ-APIKey
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tạo các parameters khác</span>
+</span></span><span style="display:flex;"><span>aws ssm put-parameter <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --name /lunagenz/dynamodb-table <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --value <span style="color:#e6db74">&#34;LunaGenZ-Sessions&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --type String
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ssm put-parameter <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --name /lunagenz/s3-bucket-reports <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --value <span style="color:#e6db74">&#34;lunagenz-reports&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --type String
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ssm put-parameter <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --name /lunagenz/external-api-url <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --value <span style="color:#e6db74">&#34;https://numerology-api.com&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --type String
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Parameter Store đã cấu hình xong&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-9-tạo-s3-buckets">Bước 9: Tạo S3 Buckets</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tạo bucket cho static website</span>
+</span></span><span style="display:flex;"><span>aws s3 mb s3://lunagenz-web --region us-east-1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tạo bucket cho reports</span>
+</span></span><span style="display:flex;"><span>aws s3 mb s3://lunagenz-reports --region us-east-1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cấu hình bucket cho static website hosting</span>
+</span></span><span style="display:flex;"><span>aws s3 website s3://lunagenz-web <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --index-document index.html <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --error-document error.html
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cấu hình bucket policy cho public read (web bucket)</span>
+</span></span><span style="display:flex;"><span>cat &gt; web-bucket-policy.json <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;Version&#34;: &#34;2012-10-17&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;Statement&#34;: [
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;Sid&#34;: &#34;PublicReadGetObject&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;Effect&#34;: &#34;Allow&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;Principal&#34;: &#34;*&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;Action&#34;: &#34;s3:GetObject&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;Resource&#34;: &#34;arn:aws:s3:::lunagenz-web/*&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    ]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws s3api put-bucket-policy <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --bucket lunagenz-web <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --policy file://web-bucket-policy.json
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cấu hình CORS cho web bucket</span>
+</span></span><span style="display:flex;"><span>aws s3api put-bucket-cors <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --bucket lunagenz-web <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --cors-configuration <span style="color:#e6db74">&#39;{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;CORSRules&#34;: [
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &#34;AllowedHeaders&#34;: [&#34;*&#34;],
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &#34;AllowedMethods&#34;: [&#34;GET&#34;],
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &#34;AllowedOrigins&#34;: [&#34;*&#34;],
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &#34;MaxAgeSeconds&#34;: 3000
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        ]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    }&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;S3 Buckets đã tạo và cấu hình xong&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-10-tạo-iam-roles">Bước 10: Tạo IAM Roles</h2>
+<h3 id="tạo-execution-role-cho-lambda">Tạo Execution Role cho Lambda</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tạo Role</span>
+</span></span><span style="display:flex;"><span>aws iam create-role <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --role-name LunaGenZ-LambdaExecutionRole <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --assume-role-policy-document <span style="color:#e6db74">&#39;{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;Version&#34;: &#34;2012-10-17&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;Statement&#34;: [
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &#34;Effect&#34;: &#34;Allow&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &#34;Principal&#34;: {&#34;Service&#34;: &#34;lambda.amazonaws.com&#34;},
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &#34;Action&#34;: &#34;sts:AssumeRole&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        ]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    }&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Đợi role được tạo</span>
+</span></span><span style="display:flex;"><span>sleep <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Attach policies</span>
+</span></span><span style="display:flex;"><span>aws iam attach-role-policy <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --role-name LunaGenZ-LambdaExecutionRole <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws iam attach-role-policy <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --role-name LunaGenZ-LambdaExecutionRole <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --policy-arn arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws iam attach-role-policy <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --role-name LunaGenZ-LambdaExecutionRole <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws iam attach-role-policy <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --role-name LunaGenZ-LambdaExecutionRole <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --policy-arn arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;IAM Execution Role đã tạo xong&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-11-thiết-lập-security-group-cho-lambda">Bước 11: Thiết lập Security Group cho Lambda</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tạo Security Group cho Lambda functions</span>
+</span></span><span style="display:flex;"><span>aws ec2 create-security-group <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --group-name LunaGenZ-Lambda-SG <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --description <span style="color:#e6db74">&#34;Security group for LunaGenZ Lambda functions&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --vpc-id $VPC_ID
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>LAMBDA_SG<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>aws ec2 describe-security-groups <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --filters <span style="color:#e6db74">&#34;Name=group-name,Values=LunaGenZ-Lambda-SG&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#34;SecurityGroups[0].GroupId&#34;</span> --output text<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cho phép outbound traffic</span>
+</span></span><span style="display:flex;"><span>aws ec2 authorize-security-group-egress <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --group-id $LAMBDA_SG <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --ip-permissions IpProtocol<span style="color:#f92672">=</span>all,IpRanges<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;[{CidrIp=0.0.0.0/0}]&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Security Group: </span>$LAMBDA_SG<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-12-cài-đặt-aws-cli-và-các-công-cụ">Bước 12: Cài đặt AWS CLI và các công cụ</h2>
+<h3 id="aws-cli-v2">AWS CLI v2</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Windows (PowerShell)</span>
+</span></span><span style="display:flex;"><span>Invoke-WebRequest -Uri <span style="color:#e6db74">&#34;https://awscli.amazonaws.com/AWSCLIV2.msi&#34;</span> -OutFile <span style="color:#e6db74">&#34;AWSCLIV2.msi&#34;</span>
+</span></span><span style="display:flex;"><span>Start-Process msiexec.exe -ArgumentList <span style="color:#e6db74">&#34;/i&#34;</span>, <span style="color:#e6db74">&#34;AWSCLIV2.msi&#34;</span>, <span style="color:#e6db74">&#34;/quiet&#34;</span> -Wait
+</span></span></code></pre></div><h3 id="git">Git</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># macOS</span>
+</span></span><span style="display:flex;"><span>brew install git
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ubuntu/Debian</span>
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install git
+</span></span></code></pre></div><h3 id="nodejs-khuyến-nghị-v18">Node.js (Khuyến nghị v18+)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Dùng nvm</span>
+</span></span><span style="display:flex;"><span>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+</span></span><span style="display:flex;"><span>nvm install <span style="color:#ae81ff">18</span>
+</span></span><span style="display:flex;"><span>nvm use <span style="color:#ae81ff">18</span>
+</span></span></code></pre></div><hr>
+<h2 id="bước-13-kiểm-tra-cài-đặt">Bước 13: Kiểm tra cài đặt</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Kiểm tra AWS CLI</span>
+</span></span><span style="display:flex;"><span>aws --version
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Kiểm tra credentials</span>
+</span></span><span style="display:flex;"><span>aws sts get-caller-identity
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Kiểm tra VPC đã tạo</span>
+</span></span><span style="display:flex;"><span>aws ec2 describe-vpcs --filters <span style="color:#e6db74">&#34;Name=tag:Name,Values=LunaGenZ-VPC&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Kiểm tra Subnets</span>
+</span></span><span style="display:flex;"><span>aws ec2 describe-subnets --filters <span style="color:#e6db74">&#34;Name=tag:Name,Values=LunaGenZ-*&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Kiểm tra DynamoDB</span>
+</span></span><span style="display:flex;"><span>aws dynamodb describe-table --table-name LunaGenZ-Sessions
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Kiểm tra S3 Buckets</span>
+</span></span><span style="display:flex;"><span>aws s3 ls | grep lunagenz
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Kiểm tra IAM Roles</span>
+</span></span><span style="display:flex;"><span>aws iam list-roles --query <span style="color:#e6db74">&#34;Roles[?contains(RoleName, &#39;LunaGenZ&#39;)].RoleName&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="tóm-tắt-các-resources-đã-tạo">Tóm tắt các Resources đã tạo</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Resource</th>
+          <th>ID/Name</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>VPC</td>
+          <td>LunaGenZ-VPC (10.0.0.0/16)</td>
+      </tr>
+      <tr>
+          <td>Public Subnet</td>
+          <td>LunaGenZ-PublicSubnet (10.0.1.0/24)</td>
+      </tr>
+      <tr>
+          <td>Private Subnet</td>
+          <td>LunaGenZ-PrivateSubnet (10.0.2.0/24)</td>
+      </tr>
+      <tr>
+          <td>Internet Gateway</td>
+          <td>LunaGenZ-IGW</td>
+      </tr>
+      <tr>
+          <td>NAT Gateway</td>
+          <td>LunaGenZ-NATGateway</td>
+      </tr>
+      <tr>
+          <td>S3 Bucket (Web)</td>
+          <td>lunagenz-web</td>
+      </tr>
+      <tr>
+          <td>S3 Bucket (Reports)</td>
+          <td>lunagenz-reports</td>
+      </tr>
+      <tr>
+          <td>DynamoDB Table</td>
+          <td>LunaGenZ-Sessions</td>
+      </tr>
+      <tr>
+          <td>IAM Role</td>
+          <td>LunaGenZ-LambdaExecutionRole</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="tiếp-theo">Tiếp theo</h2>
+<p>Khi đã hoàn thành các bước chuẩn bị, chuyển sang <strong>phần 5.3</strong> để triển khai Lambda Functions.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/vi/5-workshop/5.1-workshop-overview/" title="Tổng quan"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/vi/5-workshop/5.5.2-s3-deployment/" title="Deploy lên S3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1783616197"></script>
+    <script src="/js/perfect-scrollbar.min.js?1783616197"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1783616197"></script>
+    <script src="/js/jquery.sticky.js?1783616197"></script>
+    <script src="/js/featherlight.min.js?1783616197"></script>
+    <script src="/js/highlight.pack.js?1783616197"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1783616197"></script>
+    <script src="/js/learn.js?1783616197"></script>
+    <script src="/js/hugo-learn.js?1783616197"></script>
+
+    <link href="/mermaid/mermaid.css?1783616197" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1783616197"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
